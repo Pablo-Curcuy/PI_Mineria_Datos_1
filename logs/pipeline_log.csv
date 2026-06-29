@@ -1,0 +1,9 @@
+Paso,Descripción,Filas,Nulos,Retención(%)
+1. Carga del dataset,Lectura del JSON crudo corrigiendo NaN literales por null,8160,753,100.0
+2. Eliminación de duplicados,Remoción de 126 filas idénticas y resolución de 160 user_id duplicados (se conserva registro más reciente),8000,750,98.04
+3. Normalización de texto,"Unificación de variantes en subscription_plan (15→3), country (26→7) y favorite_genre (29→7) mediante diccionarios de mapeo",8000,750,98.04
+4. Outliers en age,"Eliminación de 834 registros con age fuera del rango válido [18, 100]",7166,690,87.82
+5. Outliers en monthly_watch_time_mins,Eliminación de códigos de error (99999) y valores negativos; imputación de nulos con mediana por plan,7105,508,87.07
+6. Outliers en customer_support_tickets,"Eliminación de valores imposibles (-1) y outliers extremos (99, 150) identificados en inspección",7017,504,85.99
+7. Tratamiento de last_login_date,"Conversión a datetime, eliminación de fechas futuras (>2025-12-31) e imputación de nulos con mediana temporal",5874,182,71.99
+8. Nulos en favorite_genre,Imputación de 182 nulos categóricos con la moda global: Acción,5874,0,71.99
