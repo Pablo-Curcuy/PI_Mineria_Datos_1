@@ -31,17 +31,16 @@ st.markdown("---")
 
 # Sección de Integrantes y Enlaces
 st.subheader("👨‍💻 Equipo de Trabajo")
+st.markdown("*Tecnicatura en Ciencia de Datos e IA*")
+
 col_eq1, col_eq2, col_eq3 = st.columns(3)
 
 with col_eq1:
-    st.markdown("""
-    **Pablo Curcuy** *Tecnicatura en Ciencia de Datos e IA* [🔗 LinkedIn](#) | [🐙 GitHub](https://github.com/Pablo-Curcuy)
-    """)
+    st.markdown("👤 **Pablo Castillo**")
 with col_eq2:
-    st.markdown("""
-    **[Nombre de tu Compañero]** *Tecnicatura en Ciencia de Datos e IA* [🔗 LinkedIn](#) | [🐙 GitHub](#)
-    """)
+    st.markdown("👤 **Nahuel Bustos**")
 with col_eq3:
-    st.markdown("""
-    **Repositorio del Proyecto** [📁 Ver código fuente y Notebooks en GitHub](https://github.com/Pablo-Curcuy/PI_Mineria_Datos_1)
-    """)
+    st.markdown("👤 **Pablo Curcuy**")
+
+st.markdown("---")
+st.markdown("🔗 **Repositorio Oficial:** [Ver código fuente y Notebooks en GitHub](https://github.com/Pablo-Curcuy/PI_Mineria_Datos_1)")
